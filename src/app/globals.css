@@ -2,26 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  min-height: 100%;
+  color: #333333;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .custom__shadow {
+    box-shadow: 50px 50px 100px 40px rgba(0, 0, 0, 0.04);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.wrapper {
+  transition: transform 0.5s ease-out;
+  perspective: 1000px;
+}
+
+.ticket:hover {
+  transition: none;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  transition: scroll-behavior 0.2s;
+}
+
+.user__btn *{
+transition: all .5s ease-in-out;
+}
+
+.user__btn{
+  height: 35px;
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user__btn__line{
+  width: 100%;
+  height: 5px;
+  background-color: #333333;
+  border-radius: 50px;
+}
+
+
+.user__btn__line--open--1{
+  transform: translateY(7px) rotate(25deg); 
+  background-color: #333333;
+  width: 100%;
+  height: 5px;
+  background-color: #333333;
+  border-radius: 50px;
+
+}
+
+.user__btn__line--open--2{
+  transform: translateY(-7px) rotate(-25deg); 
+  background-color: #333333;
+  width: 100%;
+  height: 5px;
+  background-color: #333333;
+  border-radius: 50px;
+
+}
+
+
+.loading-spinner {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #c2c2c2;
+  border-left: 1px solid #333333;
+  border-radius: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
