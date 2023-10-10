@@ -27,8 +27,8 @@ export default function Project({ image, link, icon, tecnologias }) {
       </div>
       <div className="flex flex-row flex-wrap gap-3 items-center justify-center ">
         {tecnologias?.map((tec, index) => (
-          <div key={index} className={`${techs[tec]} p-3 rounded-xl`}>
-            <label>{tec}</label>
+          <div key={index} className={`${techs[tec]} px-[1em] py-[0.75em] rounded-xl`}>
+            <label className="uppercase font-bold text-white text-md">{tec}</label>
           </div>
         ))}
       </div>
