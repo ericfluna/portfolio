@@ -9,8 +9,8 @@ export default function CatApp() {
   const { randomCatImage } = useRandomCatImage({ randomFact });
 
   return (
-    <main className="flex flex-col align-middle items-center gap-[30px] mt-32 max-w-5xl mx-auto">
-      <p className="border-b-[1px] pb-2">
+    <main className="flex flex-col align-middle items-center gap-[30px] mt-32 max-w-5xl mx-auto px-4">
+      <p className="border-b-[1px] pb-2 text-justfy">
         Proyecto sencillo basado en una prueba tecnica real para junior, donde
         se trabaja el fetching de datos asíncrono, useState y useEffect. El
         objetivo era llamar a una api que te daba un dato curioso de gatos y con
@@ -27,11 +27,11 @@ export default function CatApp() {
 
       {randomCatImage && randomFact ? (
         <>
-          <h2 className="max-w-3xl">{randomFact}</h2>
+          <h2 className="max-w-3xl mx-auto text-center">{randomFact}</h2>
           <Image
             width={300}
             height={300}
-            className=" rounded-2xl mb-2"
+            className="w-full max-w-lg rounded-2xl mb-2"
             alt={`Image of a cat saying something like: ${randomFact}`}
             src={randomCatImage}
           />

@@ -3,7 +3,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 export default function Project({ image, link, icon }) {
   return (
-    <div className=" border-[1px] bg-[#545454] aspect-video hover:-translate-y-1 transition w-full sm:w-fit sm:h-[300px] overflow-hidden rounded-[1em] sm:rounded-[2.5em]">
+    <div className=" border-[1px] bg-[#545454] aspect-video hover:-translate-y-1 transition w-[95vw] max-w-[500px] overflow-hidden rounded-[1.5em] sm:rounded-[2.5em]">
       <a href={link} className="overflow-hidden rounded-[1em]">
         <Image
           height={10000}
