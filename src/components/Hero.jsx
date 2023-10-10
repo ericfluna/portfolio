@@ -34,7 +34,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <article className="wrapper lg:hover:scale-105 mt-20 lg:mt-32">
+    <article className="wrapper lg:scale-95 lg:hover:scale-100 mt-20 lg:mt-32">
       <div className="ticket flex flex-col custom__shadow px-4 lg:px-16 py-10 gap-10 rounded-[7em] items-center lg:mt-10">
         <h1 className="text-2xl lg:text-4xl font-bold break-all">
           DESARROLLADOR FULLSTACK
