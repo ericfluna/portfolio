@@ -2,8 +2,8 @@ import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
 
 const techs = {
-  JavaScript: "#EFD81D",
-  React: "#61DAFB",
+  JavaScript: "bg-[#EFD81D]",
+  React: "bg-[#61DAFB]",
 };
 
 export default function Project({ image, link, icon, tecnologias }) {
@@ -27,7 +27,7 @@ export default function Project({ image, link, icon, tecnologias }) {
       </div>
       <div className="flex flex-row flex-wrap gap-3 items-center justify-center ">
         {tecnologias?.map((tec, index) => (
-          <div key={index} className={`bg-[${techs[tec]}] p-3 rounded-xl`}>
+          <div key={index} className={`${techs[tec]} p-3 rounded-xl`}>
             <label>{tec}</label>
           </div>
         ))}

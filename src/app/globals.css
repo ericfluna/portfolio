@@ -30,16 +30,17 @@ body,
   transition: none;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   transition: scroll-behavior 0.2s;
 }
 
-.user__btn *{
-transition: all .5s ease-in-out;
+.user__btn * {
+  transition: all 0.5s ease-in-out;
 }
 
-.user__btn{
+.user__btn {
   height: 35px;
   width: 35px;
   display: flex;
@@ -49,39 +50,35 @@ transition: all .5s ease-in-out;
   align-items: center;
 }
 
-.user__btn__line{
+.user__btn__line {
   width: 100%;
   height: 5px;
   background-color: #333333;
   border-radius: 50px;
 }
 
-
-.user__btn__line--open--1{
-  transform: translateY(7px) rotate(25deg); 
+.user__btn__line--open--1 {
+  transform: translateY(7px) rotate(25deg);
   background-color: #333333;
   width: 100%;
   height: 5px;
   background-color: #333333;
   border-radius: 50px;
-
 }
 
-.user__btn__line--open--2{
-  transform: translateY(-7px) rotate(-25deg); 
+.user__btn__line--open--2 {
+  transform: translateY(-7px) rotate(-25deg);
   background-color: #333333;
   width: 100%;
   height: 5px;
   background-color: #333333;
   border-radius: 50px;
-
 }
-
 
 .loading-spinner {
   width: 75px;
   height: 75px;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #ffffff;
   border-left: 1px solid #333333;
   border-radius: 50px;
   animation: spin 2s linear infinite;
